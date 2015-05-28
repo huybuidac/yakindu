@@ -16,14 +16,18 @@
 <!-- Session Listener -->
  <extension
        point="org.eclipse.ui.views">
-    <view
+    <category 
+           id="org.yakindu.sct.category"
+           name="YAKINDU SCT"/>
+    	<view
+    	  category="org.yakindu.sct.category"
           allowMultiple="false"
           class="org.yakindu.sct.simulation.ui.view.SimulationView"
           icon="icons/Declarations-View-16.gif"
           id="org.yakindu.sct.simulation.ui.declarationview"
           name="Simulation View"
           restorable="true">
-    </view>
+          </view>
  </extension>
  <extension
        point="org.eclipse.debug.core.statusHandlers">
